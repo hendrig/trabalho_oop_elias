@@ -34,21 +34,11 @@ namespace trabalho1
                         var identificador = Console.ReadLine();
                         Console.WriteLine("Digite um Nome para a sua Fabrica:");
                         var nome = Console.ReadLine();
-                        if(tipoFabrica == "1")
-                        {
-                            /*
-                            Adicionar os insumos e os produtos
-                            */
-                            fabricas.Add(identificador, new Fabrica(identificador, nome));
-                        }
+                        /*
+                        Adicionar a leitura dos insumos e dos produtos
+                        */
+                        fabricas.Add(identificador, new Fabrica(identificador, nome));
 
-                        if(tipoFabrica == "2")
-                        {
-                            /*
-                            Adicionar os insumos e os produtos
-                            */
-                            fabricas.Add(identificador, new Fabrica(identificador, nome));
-                        }
                         break;
                     case 2:
                         Console.WriteLine("Digite o identificador da fabrica a ser usada: ");

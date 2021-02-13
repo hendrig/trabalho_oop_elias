@@ -24,3 +24,9 @@ Abaixo, o que deve ser feito para alterar o código já existente:
   - Metal
 - Modifique a fábrica para que ela receba no construtor o insumo e o produto
 - Modifique a fábrica para que ela retorne, no método Usar, o nome do insumo (ex. Tênis de Tecido)
+
+- Por fim, crie as seguintes fábricas:
+  - Uma fábrica de Tênis de Tecido
+  - Uma fábrica de Batedeiras de Plástico
+  - Uma fábrica de Microondas de Metal
+  - Uma fábrica de Sapatos de Couro
