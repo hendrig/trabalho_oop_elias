@@ -27,9 +27,6 @@ namespace trabalho1
                 {
                     case 1:
                         Console.WriteLine("Escolha o tipo de Fabrica a ser criada: ");
-                        Console.WriteLine("1. Fabrica de Sapatos");
-                        Console.WriteLine("2. Fabrica de Eletrodomesticos");
-                        tipoFabrica = Console.ReadLine();
                         Console.WriteLine("Digite um numero para identificar a sua Fabrica:");
                         var identificador = Console.ReadLine();
                         Console.WriteLine("Digite um Nome para a sua Fabrica:");
@@ -37,6 +34,19 @@ namespace trabalho1
                         /*
                         Adicionar a leitura dos insumos e dos produtos
                         */
+                        Console.WriteLine("Escolha o seu Insumo");
+                        Console.WriteLine("1.Couro");
+                        Console.WriteLine("2.Metal");
+                        Console.WriteLine("3.Plastico");
+                        Console.WriteLine("4.Tecido");
+                        Console.WriteLine("Escolha a opção: ");
+                        var opcaoInsumo =Convert.ToInt32(Console.ReadLine());
+                        IInsumos insumos;
+                        switch(opcaoInsumo){
+                            case 1 :
+                                insumos = new Couro();
+                                break;
+                        }
                         fabricas.Add(identificador, new Fabrica(identificador, nome));
 
                         break;
